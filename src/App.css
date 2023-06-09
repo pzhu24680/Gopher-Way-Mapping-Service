@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -27,6 +24,78 @@
 .App-link {
   color: #61dafb;
 }
+
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.InteractionBar {
+  width: 20%;
+  background-color: rgb(237, 233, 233);
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  border-radius: 25px;
+  margin:10px;
+}
+
+.Map {
+  width: 80%;
+}
+
+.PathInput{
+  margin-top:2%;
+  margin-left:3%;
+  margin-right:3%;
+  height:10%;
+  background-color: #c7cacf;
+  border-radius: 25px;
+  border:0.5vw solid #c7cacf
+}
+
+.DirectionContainer{
+  margin-top:2%;
+  margin-bottom: 2%;
+  margin-left:3%;
+  margin-right:3%;
+  height:90%;
+  background-color: #c7cacf;
+  border-radius: 25px;
+  border:0.5vw solid #c7cacf;
+  overflow: auto;
+}
+
+.TunnelDirection{
+  margin-top:2%;
+  margin-left:3%;
+  margin-right:3%;
+  height:10%;
+  background-color: maroon;
+  border-radius: 25px;
+  border:0.5vw solid maroon;
+  text-align:center;
+}
+
+
+.AboveGroundConnectionDirection{
+  margin-top:2%;
+  margin-left:3%;
+  margin-right:3%;
+  height:10%;
+  background-color: rgb(187, 148, 9);
+  border-radius: 25px;
+  border:0.5vw solid rgb(187, 148, 9);
+  text-align:center;
+}
+
+.DirectionBody{
+  color:rgb(118, 116, 116);
+  font-size:12px;
+  line-height: normal;
+}
+
 
 @keyframes App-logo-spin {
   from {
