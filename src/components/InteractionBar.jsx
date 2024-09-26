@@ -15,8 +15,10 @@ const InteractionBar = ({startLocation,endLocation,clearLocations,directions,get
                 <button onClick={clearLocations}>Clear</button>
             </div>
             {('error' in directions)?
-            <div className={"InvalidRoute"}>
-            <strong>No Valid Routes</strong><br/><p1 className="DirectionBody"></p1>
+            <div className="DirectionContainer">
+                <div className={"InvalidRoute"}>
+                <strong>No Valid Routes</strong><br/><p1 className="DirectionBody"></p1>
+                </div>
             </div>
             :
             <div className="DirectionContainer">
