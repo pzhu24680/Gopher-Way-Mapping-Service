@@ -90,6 +90,17 @@
   text-align:center;
 }
 
+.InvalidRoute{
+  margin-top:2%;
+  margin-left:3%;
+  margin-right:3%;
+  height:10%;
+  background-color: lightgray;
+  border-radius: 25px;
+  border:0.5vw solid lightgray;
+  text-align:center;
+}
+
 .DirectionBody{
   color:rgb(118, 116, 116);
   font-size:12px;

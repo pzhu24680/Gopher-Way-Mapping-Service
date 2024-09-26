@@ -42,7 +42,6 @@ const getDirections=()=>{
   .then((data) => {
     setDirections(data);
   })
-  console.log(directions)
 }
   return (
     <div >
