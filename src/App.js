@@ -38,7 +38,7 @@ const convertToURLParam=(param)=>{
 const getDirections=()=>{
   let URLParamStart=convertToURLParam(startLocation)
   let URlParamEnd=convertToURLParam(endLocation)
-  fetch(`https://routing-app.herokuapp.com/shortestpath/${URLParamStart}/${URlParamEnd}`).then((response) => response.json())
+  fetch(`https://routing-app-41e9d09fb05f.herokuapp.com/shortestpath/${URLParamStart}/${URlParamEnd}`).then((response) => response.json())
   .then((data) => {
     setDirections(data);
   })
