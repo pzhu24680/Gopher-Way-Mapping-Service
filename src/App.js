@@ -15,7 +15,6 @@ function App() {
     else{
         setEndLocation(location)
     }
-    console.log(startLocation,endLocation)
 }
 const clearLocations=()=>{
   setStartLocation('');

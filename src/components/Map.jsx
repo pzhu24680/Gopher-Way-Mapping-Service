@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import MapImage from "../imgs/MapImage.png";
-// Folwell Hall, Nolte Ctr, Williamson Hall, Jones Hall, Pillsbury Hall, Morrill Hall, Johnston Hall, Walter Digital Technology Center,
-//  Smith Hall, Kolthoff Hall, Tate Hall, Murphy Hall, Vincent Hall, Ford Hall, Mechanical Engineering, Akerman Hall, Shepherd Labs, 
-// Lind Hall, Keller Hall, Amundson Hall, Transportation and Safety, Graduate Hotel, McNamara Alumni Center, University Avenue Ramp, Rapson Hall, 
-// Civil Engineering, Weaver-Densford Hall, Moos Tower, MCB, Phillips-Wangensteen Building, HSEC, Hospital Ramp, Medical Center, Masonic Cancer Research, 
-// Mayo Building, Boynton Health Service, Mayo Auditorium, Jackson Hall, Hasselmo Hall, Variety Club Research, Children's Rehab, CMU, Bookstore, Yudoff Hall,
 const Map = ({handleMapSelection}) => {
     let browserWindowWidth=window.innerWidth*0.8
     let mapImgWidth=2286
@@ -28,12 +23,10 @@ const Map = ({handleMapSelection}) => {
     ])   
 
     useEffect(()=>{
-        console.log(startLocation)
     },[startLocation])
     const stringifyCoordinateEntry=(data,widthModifier,heightModifier)=>{
         let output=[]
         for(let j=0;j<data.length;j++){
-            // console.log(j)
             if(j%2==0){
                 output.push(data[j]*widthModifier)
             }
@@ -44,7 +37,6 @@ const Map = ({handleMapSelection}) => {
         return output.join(',')
     }
     return (
-    //2286,1284 
     <div className="Map">
         <img
         src={MapImage}
